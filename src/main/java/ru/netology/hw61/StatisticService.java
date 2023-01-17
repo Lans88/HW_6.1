@@ -50,11 +50,7 @@ public class StatisticService {
     }
 
     public int amountMonthMinMiddleSale(int[] sales) {
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int middleSumInMonth = sum / 12;
+        int middleSumInMonth = middleSumSaleInMonth(sales);
         int amountMonth = 0;
         int month = 0;
         for (int sale : sales) {
@@ -66,11 +62,7 @@ public class StatisticService {
     }
 
     public int amountMonthMaxMiddleSale(int[] sales) {
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int middleSumInMonth = sum / 12;
+        int middleSumInMonth = middleSumSaleInMonth(sales);
         int amountMonth = 0;
         int month = 0;
         for (int sale : sales) {
